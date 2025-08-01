@@ -533,7 +533,7 @@ function Library:create_ui()
     Container.AnchorPoint = Vector2.new(0.5, 0.5)
     Container.Name = 'Container'
     Container.BackgroundTransparency = 0.05000000074505806
-    Container.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Pure black background
+    Container.BackgroundColor3 = Color3.fromRGB(12, 13, 15)
     Container.Position = UDim2.new(0.5, 0, 0.5, 0)
     Container.Size = UDim2.new(0, 0, 0, 0)
     Container.Active = true
@@ -545,7 +545,7 @@ function Library:create_ui()
     UICorner.Parent = Container
     
     local UIStroke = Instance.new('UIStroke')
-    UIStroke.Color = Color3.fromRGB(255, 255, 255)
+    UIStroke.Color = Color3.fromRGB(52, 66, 89)
     UIStroke.Transparency = 0.5
     UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
     UIStroke.Parent = Container
@@ -581,7 +581,7 @@ function Library:create_ui()
     
     local ClientName = Instance.new('TextLabel')
     ClientName.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-    ClientName.TextColor3 = Color3.fromRGB(0, 0, 0)
+    ClientName.TextColor3 = Color3.fromRGB(152, 181, 255)
     ClientName.TextTransparency = 0.20000000298023224
     ClientName.Text = 'March'
     ClientName.Name = 'ClientName'
@@ -609,7 +609,7 @@ function Library:create_ui()
     Pin.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Pin.Size = UDim2.new(0, 2, 0, 16)
     Pin.BorderSizePixel = 0
-    Pin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    Pin.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
     Pin.Parent = Handler
     
     local UICorner = Instance.new('UICorner')
@@ -617,7 +617,7 @@ function Library:create_ui()
     UICorner.Parent = Pin
     
     local Icon = Instance.new('ImageLabel')
-    Icon.ImageColor3 = Color3.fromRGB(0, 0, 0)
+    Icon.ImageColor3 = Color3.fromRGB(152, 181, 255)
     Icon.ScaleType = Enum.ScaleType.Fit
     Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Icon.AnchorPoint = Vector2.new(0, 0.5)
@@ -862,7 +862,7 @@ function Library:create_ui()
         Tab.Size = UDim2.new(0, 129, 0, 38)
         Tab.BorderSizePixel = 0
         Tab.TextSize = 14
-        Tab.BackgroundColor3 = Color3.fromRGB(220, 220, 220) -- Light gray for tabs
+        Tab.BackgroundColor3 = Color3.fromRGB(22, 28, 38)
         Tab.Parent = Tabs
         Tab.LayoutOrder = self._tab
         
@@ -998,7 +998,7 @@ function Library:create_ui()
             Module.Name = 'Module'
             Module.Size = UDim2.new(0, 241, 0, 93)
             Module.BorderSizePixel = 0
-            Module.BackgroundColor3 = Color3.fromRGB(240, 240, 240) -- Light gray for modules
+            Module.BackgroundColor3 = Color3.fromRGB(22, 28, 38)
             Module.Parent = settings.section
 
             local UIListLayout = Instance.new('UIListLayout')
@@ -1010,7 +1010,7 @@ function Library:create_ui()
             UICorner.Parent = Module
             
             local UIStroke = Instance.new('UIStroke')
-            UIStroke.Color = Color3.fromRGB(60, 60, 60) -- Dark gray outline for modules
+            UIStroke.Color = Color3.fromRGB(52, 66, 89)
             UIStroke.Transparency = 0.5
             UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
             UIStroke.Parent = Module
@@ -1030,7 +1030,7 @@ function Library:create_ui()
             Header.Parent = Module
             
             local Icon = Instance.new('ImageLabel')
-            Icon.ImageColor3 = Color3.fromRGB(0, 0, 0)
+            Icon.ImageColor3 = Color3.fromRGB(152, 181, 255)
             Icon.ScaleType = Enum.ScaleType.Fit
             Icon.ImageTransparency = 0.699999988079071
             Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1046,7 +1046,7 @@ function Library:create_ui()
             
             local ModuleName = Instance.new('TextLabel')
             ModuleName.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-            ModuleName.TextColor3 = Color3.fromRGB(0, 0, 0)
+            ModuleName.TextColor3 = Color3.fromRGB(152, 181, 255)
             ModuleName.TextTransparency = 0.20000000298023224
             if not settings.rich then
                 ModuleName.Text = settings.title or "Skibidi"
@@ -1068,7 +1068,7 @@ function Library:create_ui()
             
             local Description = Instance.new('TextLabel')
             Description.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-            Description.TextColor3 = Color3.fromRGB(0, 0, 0)
+            Description.TextColor3 = Color3.fromRGB(152, 181, 255)
             Description.TextTransparency = 0.699999988079071
             Description.Text = settings.description
             Description.Name = 'Description'
@@ -1090,7 +1090,7 @@ function Library:create_ui()
             Toggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
             Toggle.Size = UDim2.new(0, 25, 0, 12)
             Toggle.BorderSizePixel = 0
-            Toggle.BackgroundColor3 = Color3.fromRGB(220, 220, 220) -- Light gray for toggle background
+            Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
             Toggle.Parent = Header
             
             local UICorner = Instance.new('UICorner')
@@ -1105,7 +1105,7 @@ function Library:create_ui()
             Circle.Name = 'Circle'
             Circle.Size = UDim2.new(0, 12, 0, 12)
             Circle.BorderSizePixel = 0
-            Circle.BackgroundColor3 = Color3.fromRGB(60, 60, 60) -- Dark gray for toggle circle
+            Circle.BackgroundColor3 = Color3.fromRGB(66, 80, 115)
             Circle.Parent = Toggle
             
             local UICorner = Instance.new('UICorner')
@@ -1119,7 +1119,7 @@ function Library:create_ui()
             Keybind.BorderColor3 = Color3.fromRGB(0, 0, 0)
             Keybind.Size = UDim2.new(0, 33, 0, 15)
             Keybind.BorderSizePixel = 0
-            Keybind.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+            Keybind.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
             Keybind.Parent = Header
             
             local UICorner = Instance.new('UICorner')
@@ -1632,7 +1632,7 @@ function Library:create_ui()
                 KeybindBox.Size = UDim2.fromOffset(14, 14)
                 KeybindBox.Position = UDim2.new(1, -35, 0.5, 0)
                 KeybindBox.AnchorPoint = Vector2.new(0, 0.5)
-                KeybindBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                KeybindBox.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
                 KeybindBox.BorderSizePixel = 0
                 KeybindBox.Parent = Checkbox
             
@@ -1661,7 +1661,7 @@ function Library:create_ui()
                 Box.Name = "Box"
                 Box.Size = UDim2.new(0, 15, 0, 15)
                 Box.BorderSizePixel = 0
-                Box.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                Box.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
                 Box.Parent = Checkbox
             
                 local BoxCorner = Instance.new("UICorner")
@@ -1675,7 +1675,7 @@ function Library:create_ui()
                 Fill.BorderColor3 = Color3.fromRGB(0, 0, 0)
                 Fill.Name = "Fill"
                 Fill.BorderSizePixel = 0
-                Fill.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                Fill.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
                 Fill.Parent = Box
             
                 local FillCorner = Instance.new("UICorner")
@@ -1878,7 +1878,7 @@ function Library:create_ui()
                 Slider.Name = 'Slider'
                 Slider.Size = UDim2.new(0, 207, 0, 22)
                 Slider.BorderSizePixel = 0
-                Slider.BackgroundColor3 = Color3.fromRGB(220, 220, 220) -- Light gray for slider background
+                Slider.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
                 Slider.Parent = Options
                 Slider.LayoutOrder = LayoutOrderModule
                 
@@ -1910,7 +1910,7 @@ function Library:create_ui()
                 Drag.Name = 'Drag'
                 Drag.Size = UDim2.new(0, 207, 0, 4)
                 Drag.BorderSizePixel = 0
-                Drag.BackgroundColor3 = Color3.fromRGB(60, 60, 60) -- Dark gray for slider bar
+                Drag.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
                 Drag.Parent = Slider
                 
                 local UICorner = Instance.new('UICorner')
@@ -1925,7 +1925,7 @@ function Library:create_ui()
                 Fill.Name = 'Fill'
                 Fill.Size = UDim2.new(0, 103, 0, 4)
                 Fill.BorderSizePixel = 0
-                Fill.BackgroundColor3 = Color3.fromRGB(60, 60, 60) -- Dark gray for slider fill
+                Fill.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
                 Fill.Parent = Drag
                 
                 local UICorner = Instance.new('UICorner')
@@ -1946,7 +1946,7 @@ function Library:create_ui()
                 Circle.BorderColor3 = Color3.fromRGB(0, 0, 0)
                 Circle.Size = UDim2.new(0, 6, 0, 6)
                 Circle.BorderSizePixel = 0
-                Circle.BackgroundColor3 = Color3.fromRGB(220, 220, 220) -- Light gray for slider circle
+                Circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 Circle.Parent = Fill
                 
                 local UICorner = Instance.new('UICorner')
@@ -2118,7 +2118,7 @@ function Library:create_ui()
                 Box.Name = 'Box'
                 Box.Size = UDim2.new(0, 207, 0, 22)
                 Box.BorderSizePixel = 0
-                Box.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                Box.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
                 Box.Parent = TextLabel
                 
                 local UICorner = Instance.new('UICorner')
@@ -2497,7 +2497,7 @@ function Library:create_ui()
                 local KeybindBox = Instance.new("TextLabel")
                 KeybindBox.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
                 KeybindBox.Size = UDim2.new(0, 15, 0, 15)
-                KeybindBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                KeybindBox.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
                 KeybindBox.TextColor3 = Color3.fromRGB(255, 255, 255)
                 KeybindBox.TextSize = 11
                 KeybindBox.BackgroundTransparency = 1
@@ -2514,7 +2514,7 @@ function Library:create_ui()
                 CheckboxCorner.CornerRadius = UDim.new(0, 3)
 
                 local UIStroke = Instance.new("UIStroke", KeybindBox)
-                UIStroke.Color = Color3.fromRGB(255, 255, 255)
+                UIStroke.Color = Color3.fromRGB(152, 181, 255)
                 UIStroke.Thickness = 1
                 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
             
@@ -2541,13 +2541,13 @@ function Library:create_ui()
                 if not settings.disablecheck then
                     local Checkbox = Instance.new("TextButton")
                     Checkbox.Size = UDim2.new(0, 15, 0, 15)
-                    Checkbox.BackgroundColor3 = checked and Color3.fromRGB(0, 0, 0) or Color3.fromRGB(32, 38, 51)
+                    Checkbox.BackgroundColor3 = checked and Color3.fromRGB(152, 181, 255) or Color3.fromRGB(32, 38, 51)
                     Checkbox.Text = ""
                     Checkbox.Parent = RightContainer
                     Checkbox.LayoutOrder = 1;
 
                     local UIStroke = Instance.new("UIStroke", Checkbox)
-                    UIStroke.Color = Color3.fromRGB(255, 255, 255)
+                    UIStroke.Color = Color3.fromRGB(152, 181, 255)
                     UIStroke.Thickness = 1
                     UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
                 
@@ -2557,7 +2557,7 @@ function Library:create_ui()
             
                     local function toggleState()
                         checked = not checked
-                        Checkbox.BackgroundColor3 = checked and Color3.fromRGB(0, 0, 0) or Color3.fromRGB(32, 38, 51)
+                        Checkbox.BackgroundColor3 = checked and Color3.fromRGB(152, 181, 255) or Color3.fromRGB(32, 38, 51)
                         Library._config._flags[settings.flag].checked = checked
                         Config:save(game.GameId, Library._config)
                         if settings.callback then

@@ -53,8 +53,8 @@ if old_March then
     Debris:AddItem(old_March, 0)
 end
 
-if not isfolder("March") then
-    makefolder("March")
+if not isfolder("Hidden") then
+    makefolder("Hidden")
 end
 
 
@@ -283,7 +283,7 @@ local Config = setmetatable({
     save = function(self: any, file_name: any, config: any)
         local success_save, result = pcall(function()
             local flags = HttpService:JSONEncode(config)
-            writefile('March/'..file_name..'.json', flags)
+            writefile('Hidden/'..file_name..'.json', flags)
         end)
     
         if not success_save then
@@ -523,7 +523,7 @@ function Library:create_ui()
 
     local March = Instance.new('ScreenGui')
     March.ResetOnSpawn = false
-    March.Name = 'March'
+    March.Name = 'Hidden'
     March.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     March.Parent = CoreGui
     
@@ -583,7 +583,7 @@ function Library:create_ui()
     ClientName.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
     ClientName.TextColor3 = Color3.fromRGB(152, 181, 255)
     ClientName.TextTransparency = 0.20000000298023224
-    ClientName.Text = 'March'
+    ClientName.Text = 'Hidden'
     ClientName.Name = 'ClientName'
     ClientName.Size = UDim2.new(0, 31, 0, 13)
     ClientName.AnchorPoint = Vector2.new(0, 0.5)
